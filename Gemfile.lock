@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/mizoR/plantuml-ruby.git
+  revision: 10f6eb19bd764e40a36c2c73b1650529fe9e4543
+  specs:
+    plantuml (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -24,6 +30,8 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_hash (1.4.1)
+      activesupport (>= 2.2.2)
     activejob (5.0.0.1)
       activesupport (= 5.0.0.1)
       globalid (>= 0.3.6)
@@ -39,6 +47,11 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+    autoprefixer-rails (6.5.3)
+      execjs
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (9.0.6)
     coderay (1.1.1)
@@ -189,11 +202,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_hash
+  bootstrap-sass
   byebug
   coffee-rails
   jbuilder
   jquery-rails
   listen
+  plantuml!
   pry-rails
   puma
   rails

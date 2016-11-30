@@ -1,0 +1,9 @@
+.container-fluid
+  .row
+    .col-md-6
+      = form_for @sequence, url: sequence_path do |f|
+        .form-group
+          = f.text_area :script, id: 'script', class: 'form-control', rows: 20
+    .col-md-6
+      #output
+      img#diagram

@@ -1,0 +1,13 @@
+html
+  head
+    title Webseq
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  = content_tag :body, nil, 'data-access_token' => access_token
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand Webseq
+
+    = yield
